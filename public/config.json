@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
        "en-US": {
-           "name": "Twilio SMS",
+           "name": "Twilio Whatsapp",
            "description": "Send Twilio SMS with Journey Builder",
            "TwilioMessage":"test"
        }
@@ -17,11 +17,11 @@
             "inArguments": [
                 {
                   "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Contact.Attribute.TwilioV1.TwilioNumber}}" 
+                  "to": "{{Contact.Attribute.Twilio_Test.Mobile}}" 
                 }               
             ],
             "outArguments": [],
-            "url": "https://twilio-sfmc.herokuapp.com/journeybuilder/execute",
+            "url": "https://sfmcwhatsappintegration.herokuapp.com/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -30,9 +30,9 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "e962d1d4-8b07-4e76-89be-ecd1f1423b6d",
+      "applicationExtensionKey": "4db72603-83d7-4451-9340-9dfb5320fc6d",
        "save": {
-           "url": "https://twilio-sfmc.herokuapp.com/save",
+           "url": "https://sfmcwhatsappintegration.herokuapp.com/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -40,7 +40,7 @@
             "timeout": 2000
        },
        "publish": {
-           "url": "https://twilio-sfmc.herokuapp.com/publish",
+           "url": "https://sfmcwhatsappintegration.herokuapp.com/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -48,7 +48,7 @@
             "timeout": 2000
        },
        "validate": {
-           "url": "https://twilio-sfmc.herokuapp.com/validate",
+           "url": "https://sfmcwhatsappintegration.herokuapp.com/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -56,7 +56,7 @@
             "timeout": 2000
        },
        "stop": {
-           "url": "https://twilio-sfmc.herokuapp.com/stop",
+           "url": "https://sfmcwhatsappintegration.herokuapp.com/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
