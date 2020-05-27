@@ -81,8 +81,8 @@ exports.execute = function (req, res) {
     const body = requestBody.body;;
      const message = "Hi im ashray!";
     const client = require('twilio')(accountSid, authToken); 
-    `Hello, ${to}`
- client.messages 
+
+    client.messages 
           .create({
          from: 'whatsapp:+14155238886',
          body: `Hello, ${to}`,
