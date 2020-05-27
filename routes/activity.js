@@ -85,7 +85,7 @@ exports.execute = function (req, res) {
     client.messages 
           .create({
          from: 'whatsapp:+14155238886',
-         body: `Hello, ${requestBody}`,
+         body: `Hello, ${to}`,
          to: 'whatsapp:+917259862907'
             })
           .then(message => console.log(message.sid)) 
